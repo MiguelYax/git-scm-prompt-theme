@@ -1,4 +1,3 @@
-alias ".."="cd .."
 alias "sp"="source ~/.bash_profile"
 
 black="0;30"
@@ -31,16 +30,16 @@ bg_light_gray="47"
 prompt-theme() {  
   case $1 in 
   "blue")  
-    prompt="\[\e[${black}m\e[${bg_blue}m\]\[\e[${black}m\e[${bg_blue}m \w \]\[\e[${bg_green}m`__git_ps1`\]\[\e[${blue}m\]\[\e[${white}m\] "
+    prompt='\[\e[${black}m\e[${bg_blue}m\]\[\e[${black}m\e[${bg_blue}m \w \]\[\e[${bg_green}m$(__git_ps1 " (%s)")\]\[\e[${blue}m\]\e[0m'
   ;;
   "green")
-    prompt="\[\e[${black}m\e[${bg_green}m\]\[\e[${black}m\e[${bg_green}m \w \]\[\e[${bg_blue}m`__git_ps1`\]\[\e[${green}m\]\[\e[${white}m\] "
+    prompt='\[\e[${black}m\e[${bg_green}m\]\[\e[${black}m\e[${bg_green}m \w \]\[\e[${bg_blue}m$(__git_ps1 " (%s)")\]\[\e[${green}m\]\e[0m'
   ;;
   "red")
-    prompt="\[\e[${black}m\e[${bg_red}m\]\[\e[${black}m\e[${bg_red}m \w \]\[\e[${bg_yellow}m`__git_ps1`\]\[\e[${red}m\]\[\e[${white}m\] "
+    prompt='\[\e[${black}m\e[${bg_red}m\]\[\e[${black}m\e[${bg_red}m \w \]\[\e[${bg_yellow}m$(__git_ps1 " (%s)")\]\[\e[${red}m\]\e[0m'
   ;;
    "purple")
-    prompt="\[\e[${black}m\e[${bg_purple}m\]\[\e[${black}m\e[${bg_purple}m \w \]\[\e[${bg_blue}m`__git_ps1`\]\[\e[${purple}m\]\[\e[${white}m\] "
+    prompt='\[\e[${black}m\e[${bg_purple}m\]\[\e[${black}m\e[${bg_purple}m \w \]\[\e[${bg_blue}m$(__git_ps1 " (%s)")\]\[\e[${purple}m\]\e[0m'
   ;;
   esac
   if [ -n "$prompt" ]; then
