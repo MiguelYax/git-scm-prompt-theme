@@ -8,6 +8,12 @@ This is a script that sets the theme for the prompt of the terminal of the git b
 - green
 - purple
 
+## Requirements
+This script requires **DejaVu Sans Mono for Powerline** font, The font is available on this font repository [powerline/fonts](https://github.com/powerline/fonts) and the specific font that we use is [DejaVu Sans Mono for Powerline](https://github.com/powerline/fonts/tree/master/DejaVuSansMono).
+After installation please configure your git bash with this font.
+
+![Set font](https://raw.githubusercontent.com/MiguelYax/git-scm-prompt-theme/master/images/set-font.png) 
+
 
 ## Usage:
 Clone the repository on your local machine at the location that you want. 
