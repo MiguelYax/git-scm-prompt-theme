@@ -1,5 +1,3 @@
-alias "sp"="source ~/.bash_profile"
-
 black="0;30"
 red="0;31"
 green="0;32"

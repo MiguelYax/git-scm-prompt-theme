@@ -23,8 +23,8 @@ This script provides 2 functions to set prompt.
 - prompt-theme <themeName>: It sets a specific theme for example:
 - prompt-random-theme: It chooses a random theme for each new instance of the terminal that you open.
 
-### Update your .bash_profile
-Add these lines to your .bash_profile if you do not have this file please create it.
+### Update your .bashrc
+Add these lines to your .bashrc if you do not have this file please create it.
 
 ```bash
 test -f ~/git-scm-prompt-theme/git-scm-prompt-theme.sh && . ~/git-scm-prompt-theme/git-scm-prompt-theme.sh
