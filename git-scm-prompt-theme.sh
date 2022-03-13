@@ -47,7 +47,7 @@ prompt-theme() {
   ;;
   esac
   if [ -n "$prompt" ]; then
-    # @TODO: bug when press arrow key up for command history it override the prompt i fixed it adding a new line. 
+    # @TODO: bug when pressing up arrow key to shows the command history it overrides the prompt. I fixed it by adding a new line.
     prompt="$prompt$(new_line)"
     export PS1=$prompt
   fi  
