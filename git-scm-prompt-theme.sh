@@ -27,6 +27,10 @@ bg_light_gray="47"
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 
+new_line() {
+  printf "\n$ "
+}
+
 prompt-theme() {  
   case $1 in 
   "blue")  
@@ -43,6 +47,8 @@ prompt-theme() {
   ;;
   esac
   if [ -n "$prompt" ]; then
+    # @TODO: bug when press arrow key up for command history it override the prompt i fixed it adding a new line. 
+    prompt="$prompt$(new_line)"
     export PS1=$prompt
   fi  
 }
